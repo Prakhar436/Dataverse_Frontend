@@ -1,0 +1,35 @@
+#tsparticles {
+    height: 100vh;
+  }
+  
+  .banner {
+    position: relative;
+
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 20%;
+    left: 3.5%;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .name{
+    color: white;
+  }
+
+  .tag{
+    color: #5a91e2;
+  }
+  
+  .banner-text h1 {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .banner-text h1{
+        font-size: 50px;
+    }
+  }
