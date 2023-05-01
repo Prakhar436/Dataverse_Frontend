@@ -58,7 +58,7 @@ export const ParticlesConfig = {
           enable: true,
           area: 1200,
           width: 1200,
-          height: 400,
+          height: 300,
         },
         value: 80,
       },

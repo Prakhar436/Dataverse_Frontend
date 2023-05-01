@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 import { ParticlesConfig } from "./ParticlesConfig";
 import { motion } from "framer-motion";
 import "./Banner.css";
+import Navbar from "../Navbar/Navbar";
 
 const Banner = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -16,24 +17,32 @@ const Banner = () => {
   }, []);
 
   return (
+   
     <motion.div
       className="banner"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
+  
       <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={ParticlesConfig}
       />
+
+      <div className="bar">
+      <Navbar/>
+      </div>
+      
       <motion.div
         className="banner-text"
         initial={{ x: -500 }}
         animate={{ x: 0 }}
         transition={{ delay: 0.1, duration: 0.7 }}
       >
+        
         <motion.h1
           className="name"
           initial={{ y: -50, opacity: 0 }}

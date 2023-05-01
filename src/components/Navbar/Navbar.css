@@ -1,0 +1,10 @@
+.header{
+    background-color: #000000;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.links{
+    display: flex;
+}
