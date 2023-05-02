@@ -1,10 +1,32 @@
+*{
+    margin: 0;
+}
 .header{
-    background-color: #000000;
+    /* background-color: #000000; */
+    width: 100vw;
+    height: 10vh;
     color: white;
+    display: block;
+    margin: 0;
+    position: absolute;
+    backdrop-filter: blur(3px);
+    background: rgba(43, 107, 218, 0.21);
+    box-shadow: 0 4px 30px rgba(44, 90, 225, 0.1);
+    /* backdrop-filter: greyscale(100%); */
+    
+    /* background: transparent; */
 }
-.container{
+/* .container{
     display: flex;
-}
+} */
 .links{
+    /* background-color: aqua; */
+    height: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.links li{
+    cursor: pointer;
 }
